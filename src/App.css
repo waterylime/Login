@@ -1,0 +1,5 @@
+.hero-body {
+	background-image: url(../src/assets/image/loadingPage.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
