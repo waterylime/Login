@@ -11,7 +11,7 @@ function App() {
   )
   const { isLoading, user, loginWithRedirect, logout } = useAuth0();
   useEffect(()=>{
-    alert("after" + userCount);
+   
   },[userCount])
   return (
     <>
@@ -25,7 +25,7 @@ function App() {
                 <h1>Click Below!</h1>
                 <button
                   onClick={()=> {
-                    alert("b4" + userCount);
+                   
                     setUserCount(userCount + 1);
                     
                     loginWithRedirect()
@@ -39,7 +39,7 @@ function App() {
             {!isLoading && user && (
               
               
-             window.location.href="https://www.google.com"
+             window.location.href="https://radiant-retreat-86258.herokuapp.com/"
               
           //     <>
           //       <h1>You are logged in!</h1>
