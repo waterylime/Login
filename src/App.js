@@ -6,13 +6,9 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 import './App.css';
 
 function App() {
-  const [userCount, setUserCount] = useState(
-    0
-  )
+ 
   const { isLoading, user, loginWithRedirect, logout } = useAuth0();
-  useEffect(()=>{
-   
-  },[userCount])
+
   return (
     <>
       {/* <Header /> */}
@@ -20,13 +16,13 @@ function App() {
       <div className="hero is-info is-fullheight">
         <div className="hero-body">
           <div className="container has-text-centered">
-            {!isLoading && !user && userCount<4 &&(
+            {!isLoading && !user  &&(
               <>
                 <h1>Click Below!</h1>
                 <button
                   onClick={()=> {
                    
-                    setUserCount(userCount + 1);
+
                     
                     loginWithRedirect()
                   }}
