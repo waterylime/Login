@@ -2,6 +2,7 @@
   "name": "auth0-react-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://waterylime.github.io/Login/",
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.3.2",
     "bulma": "^0.8.0",
