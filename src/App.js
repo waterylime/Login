@@ -5,13 +5,9 @@ import Header from './components/Header';
 import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
 function App() {
-  const [userCount, setUserCount] = useState(
-    0
-  )
+ 
   const { isLoading, user, loginWithRedirect, logout } = useAuth0();
-  useEffect(()=>{
-    alert("after" + userCount);
-  },[userCount])
+ 
   return (
     <>
       {/* <Header /> */}
@@ -19,13 +15,13 @@ function App() {
       <div className="hero is-info is-fullheight">
         <div className="hero-body">
           <div className="container has-text-centered">
-            {!isLoading && !user && userCount<4 &&(
+            {!isLoading && !user  &&(
               <>
                 <h1>Click Below!</h1>
                 <button
                   onClick={()=> {
-                    alert("b4" + userCount);
-                    setUserCount(userCount + 1);
+                   
+                   
                     
                     loginWithRedirect()
                   }}
@@ -38,7 +34,7 @@ function App() {
             {!isLoading && user && (
               
               
-             window.location.href="https://www.google.com"
+             window.location.href="https://radiant-retreat-86258.herokuapp.com/"
               
           //     <>
           //       <h1>You are logged in!</h1>
