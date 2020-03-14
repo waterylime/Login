@@ -3,11 +3,12 @@ import 'bulma/css/bulma.css';
 import { useAuth0 } from './contexts/auth0-context';
 import Header from './components/Header';
 import { unstable_renderSubtreeIntoContainer } from 'react-dom';
+import './App.css';
 
 function App() {
  
   const { isLoading, user, loginWithRedirect, logout } = useAuth0();
- 
+
   return (
     <>
       {/* <Header /> */}
@@ -21,7 +22,7 @@ function App() {
                 <button
                   onClick={()=> {
                    
-                   
+
                     
                     loginWithRedirect()
                   }}
