@@ -16,7 +16,8 @@ export class Auth0Provider extends Component {
 	config = {
 		domain: 'dev-67hpqq8o.auth0.com',
 		client_id: 'uhHvmxe6HQa7v3x7bw4EUcjTSQ9VDvAb',
-		redirect_uri: 'http://localhost:3000/callback'
+		//redirect_uri: 'http://localhost:3000/callback'
+		redirect_uri:'https://radiant-retreat-86258.herokuapp.com/'
 	};
 
 	componentDidMount() {
